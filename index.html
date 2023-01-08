@@ -3,99 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <script src="https://kit.fontawesome.com/eedbd07b9a.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
     <link rel="stylesheet" href="tab-styling.css" />
     <link rel="stylesheet" href="style.css" />
-
-    <title>Frontend Mentor | [Challenge Name Here]</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style> -->
+    <title>Frontend Mentor | Social Media Dashboard</title>
   </head>
   <body>
-    <div class="top-bg"></div>
+    <div class="top-bg" id="top-bg"></div>
     <div class="container">
       <nav>
         <div class="brand">
-          <div class="brand-name">social media dashboard</div>
+          <div class="brand-name" id="brand-name">social media dashboard</div>
           <div class="total-followers">total followers: 23.004</div>
         </div>
         <div class="toggle-container">
-          <div class="toggle-name">dark mode</div>
-          <label class="switch">
+          <div class="toggle-name" id="toggle-name">dark mode</div>
+          <label class="switch" id="toggle-switch">
             <input type="checkbox" id="toggle" class="toggle" />
             <span class="slider round"></span>
           </label>
         </div>
       </nav>
       <section>
-        <div class="card-section facebook">
+        <div class="card-section facebook" id="card-section">
           <div class="border-top"></div>
           <div class="sosmed-card">
             <i class="fa-brands fa-square-facebook"></i>
             <div class="sosmed-name">@nathanf</div>
           </div>
           <followers>
-            <div class="foll-num">1987</div>
+            <div class="foll-num" id="foll-num">1987</div>
             <div class="foll-text">followers</div>
           </followers>
           <div class="today-status"><i class="fa-solid fa-caret-up"></i> 12 today</div>
         </div>
-        <div class="card-section twitter">
+        <div class="card-section twitter" id="card-section">
           <div class="border-top"></div>
           <div class="sosmed-card">
             <i class="fa-brands fa-twitter"></i>
             <div class="sosmed-name">@nathanf</div>
           </div>
           <followers>
-            <div class="foll-num">1044</div>
+            <div class="foll-num" id="foll-num">1044</div>
             <div class="foll-text">followers</div>
           </followers>
           <div class="today-status"><i class="fa-solid fa-caret-up"></i> 99 today</div>
         </div>
-        <div class="card-section instagram">
+        <div class="card-section instagram" id="card-section">
           <div class="border-top"></div>
           <div class="sosmed-card">
             <i class="fa-brands fa-instagram"></i>
             <div class="sosmed-name">@realnathanf</div>
           </div>
           <followers>
-            <div class="foll-num">11K</div>
+            <div class="foll-num" id="foll-num">11K</div>
             <div class="foll-text">followers</div>
           </followers>
           <div class="today-status"><i class="fa-solid fa-caret-up"></i> 1099 today</div>
         </div>
-        <div class="card-section youtube">
+        <div class="card-section youtube" id="card-section">
           <div class="border-top"></div>
           <div class="sosmed-card">
             <i class="fa-brands fa-youtube"></i>
             <div class="sosmed-name">Nathan F.</div>
           </div>
           <followers>
-            <div class="foll-num">8239</div>
+            <div class="foll-num" id="foll-num">8239</div>
             <div class="foll-text">subscribers</div>
           </followers>
           <div class="today-status"><i class="fa-solid fa-caret-down"></i> 144 today</div>
         </div>
       </section>
       <div class="wrapper">
-        <div class="title-wrapper">overview - today</div>
+        <div class="title-wrapper" id="title-wrapper">overview - today</div>
         <div class="card-wrapper">
-          <div class="card satu">
+          <div class="card satu" id="card">
             <div class="left">
               <div class="response-name">page views</div>
-              <div class="response-num">87</div>
+              <div id="response-num" class="response-num">87</div>
             </div>
             <div class="right">
               <div class="response-icon">
@@ -104,10 +90,10 @@
               <div class="response-status"><i class="fa-solid fa-caret-up"></i>3%</div>
             </div>
           </div>
-          <div class="card dua">
+          <div class="card dua" id="card">
             <div class="left">
               <div class="response-name">likes</div>
-              <div class="response-num">52</div>
+              <div id="response-num" class="response-num">52</div>
             </div>
             <div class="right">
               <div class="response-icon">
@@ -116,10 +102,10 @@
               <div class="response-status"><i class="fa-solid fa-caret-down"></i>2%</div>
             </div>
           </div>
-          <div class="card tiga">
+          <div class="card tiga" id="card">
             <div class="left">
               <div class="response-name">likes</div>
-              <div class="response-num">5462</div>
+              <div id="response-num" class="response-num">5462</div>
             </div>
             <div class="right">
               <div class="response-icon">
@@ -128,10 +114,10 @@
               <div class="response-status"><i class="fa-solid fa-caret-up"></i>2257%</div>
             </div>
           </div>
-          <div class="card empat">
+          <div class="card empat" id="card">
             <div class="left">
               <div class="response-name">profile views</div>
-              <div class="response-num">52k</div>
+              <div id="response-num" class="response-num">52k</div>
             </div>
             <div class="right">
               <div class="response-icon">
@@ -140,10 +126,10 @@
               <div class="response-status"><i class="fa-solid fa-caret-up"></i>1375%</div>
             </div>
           </div>
-          <div class="card lima">
+          <div class="card lima" id="card">
             <div class="left">
               <div class="response-name">retweets</div>
-              <div class="response-num">117</div>
+              <div id="response-num" class="response-num">117</div>
             </div>
             <div class="right">
               <div class="response-icon">
@@ -152,10 +138,10 @@
               <div class="response-status"><i class="fa-solid fa-caret-up"></i>303%</div>
             </div>
           </div>
-          <div class="card enam">
+          <div class="card enam" id="card">
             <div class="left">
               <div class="response-name">likes</div>
-              <div class="response-num">507</div>
+              <div id="response-num" class="response-num">507</div>
             </div>
             <div class="right">
               <div class="response-icon">
@@ -164,28 +150,28 @@
               <div class="response-status"><i class="fa-solid fa-caret-up"></i>553%</div>
             </div>
           </div>
-          <div class="card tujuh">
+          <div class="card tujuh" id="card">
             <div class="left">
               <div class="response-name">likes</div>
-              <div class="response-num">107</div>
+              <div id="response-num" class="response-num">107</div>
             </div>
             <div class="right">
               <div class="response-icon">
                 <i class="fa-brands fa-youtube"></i>
               </div>
-              <div class="response-status"><i class="fa-solid fa-caret-up"></i>3%</div>
+              <div class="response-status"><i class="fa-solid fa-caret-down"></i>3%</div>
             </div>
           </div>
-          <div class="card delapan">
+          <div class="card delapan" id="card">
             <div class="left">
               <div class="response-name">total views</div>
-              <div class="response-num">1407</div>
+              <div id="response-num" class="response-num">1407</div>
             </div>
             <div class="right">
               <div class="response-icon">
                 <i class="fa-brands fa-youtube"></i>
               </div>
-              <div class="response-status"><i class="fa-solid fa-caret-up"></i>3%</div>
+              <div class="response-status"><i class="fa-solid fa-caret-down"></i>3%</div>
             </div>
           </div>
         </div>
@@ -194,9 +180,6 @@
 
     <!-- js -->
     <script src="script.js"></script>
-    <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+  </div> 
   </body>
 </html>
